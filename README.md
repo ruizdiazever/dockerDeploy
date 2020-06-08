@@ -2,10 +2,10 @@
 
 ## Pasos para el build de la imagen desde nuestro proyecto original
 ```bash
-$ docker build --tag <name>:<version> .                # cafe:1.0.0
-$ docker tag <name>:<version> <repositorie:version>    # cafe:1.0.0 cafe:1.0.0
+$ docker build --tag <name>:<version> .                # docker build --tag cafe:1.0.1 .
+$ docker tag <name>:<version> <repositorie:version>    # docker tag cafe:1.0.1 ruizdiazever/cafe:1.0.1
 $ docker login
-$ docker push <repositorie:version>                    # ruizdiazever/cafe:tagname
+$ docker push <repositorie:version>                    # docker push ruizdiazever/cafe:1.0.1
 ```
 
 ## Deployment de nuestra web desde este folder
