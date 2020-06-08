@@ -10,7 +10,7 @@ $ docker push <repositorie:version>                    # docker push ruizdiazeve
 ```
 
 ## Deployment de nuestra web desde este folder o cualquier otro
-Es necesario hacer las configuraciones en docker-compose.yml
+Es necesario hacer las configuraciones en ```docker-compose.yml```
 ```bash
 $ docker login
 $ docker-compose pull
