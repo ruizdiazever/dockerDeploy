@@ -3,10 +3,16 @@ version: '3'
 services:
   db:
     image: nouchka/sqlite3
+  api:
+    image: ruizdiazever/products:1.0.4
+    command: python manage.py runserver 0.0.0.0:3000
+    ports:
+      - "3000:3000"
   web:
-    image: ruizdiazever/cafe:1.0.3
+    image: ruizdiazever/cafe:1.0.6
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     depends_on:
       - db
+      - api
