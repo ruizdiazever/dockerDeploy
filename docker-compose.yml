@@ -9,7 +9,7 @@ services:
     ports:
       - "3000:3000"
   web:
-    image: ruizdiazever/cafe:1.0.6
+    image: ruizdiazever/cafe:1.0.8
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
